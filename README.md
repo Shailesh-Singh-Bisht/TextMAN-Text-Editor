@@ -145,7 +145,7 @@ We welcome contributions of all kinds! Here's how you can help make TextMAN even
 
 ### Getting Started
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/TextMAN-Text-Editor.git`
+2. Clone your fork: `git clone https://github.com/Shailesh-Singh-Bisht/TextMAN-Text-Editor.git`
 3. Create a new branch: `git checkout -b feature/your-feature-name`
 
 ### Making Changes
