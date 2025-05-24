@@ -40,7 +40,7 @@ A **lightweight and efficient text editor** built with Qt 5, offering a clean an
 
 To get started with TextMAN, simply:
 
-1.  **Download the latest release ZIP** from the [releases page](https://www.google.com/search?q=https://github.com/your-repo/TextMAN/releases) (replace with actual link if available).
+1.  **Download the latest release ZIP** from the [releases page]()
 2.  **Extract the contents** of the downloaded ZIP file to your preferred location on your system.
 3.  Navigate into the extracted folder and **run `TextMAN.exe`**. The application should launch directly.
 
