@@ -18,6 +18,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Shailesh-Singh-Bisht",
+      "name": "Shailesh Singh Bisht",
+      "avatar_url": "https://avatars.githubusercontent.com/u/107263955?v=4",
+      "profile": "https://shailesh-singh-bisht-portfolio.vercel.app/",
+      "contributions": [
+        "design",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
