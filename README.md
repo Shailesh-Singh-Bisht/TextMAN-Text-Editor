@@ -1,108 +1,75 @@
-<<<<<<< HEAD
-# TextMAN - Lightweight Text Editor for MiniOS
+# TextMAN - Modern Qt-based Text Editor
 
-![TextMAN Logo](D:\MiniOS TextMan\TextMan\icons\app_logo.ico)
-
-TextMAN is a lightweight, feature-rich text editor designed specifically for MiniOS. Built with Qt 5.5, it offers a clean interface with essential text editing capabilities while maintaining compatibility with ReactOS.
+A feature-rich text editor built with Qt 5, offering a clean and intuitive interface for document editing.
 
 ## Features
 
-- **File Operations**:
-  - Create new documents
-  - Open existing `.txt` files
-  - Save documents
+### Document Management
+- Create, open, and save text documents
+- Automatic word and character counting
+- Clean document interface
 
-- **Text Formatting**:
-  - Font size selection
-  - Text color customization
-  - Bold, italic, and underline styling
-  - Text alignment (left, center, right)
+### Rich Text Formatting
+- **Font Customization**
+  - Font family selection via dropdown
+  - Font size options (8pt to 24pt)
+  - Text color picker
+- **Text Styling**
+  - Bold, Italic, Underline controls
+  - Text alignment (Left, Center, Right)
+  
+### Modern UI Elements
+- **Customized Dark Theme**
+  - Dark menubar and toolbar (#2c3e50)
+  - White text editing area
+  - Status footer with statistics
+- **Responsive Layout**
+  - Window scales to 80% of screen size
+  - Minimum window size: 800x600
+  - Centered on launch
 
-- **User Interface**:
-  - Sticky menu bar and toolbar
-  - Scrollable text area with white background
-  - Status footer with word and character count
+## Technical Details
 
-- **Additional Tools**:
-  - Hard word limit of 10,000 words
-
-## System Requirements
-
-- Windows or ReactOS system
-- Qt 5.5 runtime libraries (included in package)
-- 4GB RAM recommended
-
-## Installation
-
-1. Download the TextMAN package
-2. Extract the contents to your preferred location
-3. The application requires no additional installation - simply run `TextMAN.exe`
-
-## Included Files
-
+### Architecture
 ```
-TextMAN/
-├── TextMAN.exe            # Main executable
-├── assets/                # Application assets
-│   └── icons/             # Application icons
-├── platforms/             # Qt platform plugins
-├── *.dll                  # Required DLL files
-└── README.md              # This documentation
+src/
+├── app/
+│   ├── AppController.cpp     # Application lifecycle
+│   └── DocumentManager.cpp   # Document handling
+└── ui/
+    ├── MainWindow.cpp        # Main application window
+    ├── MenuBar.cpp          # File operations menu
+    ├── Toolbar.cpp          # Formatting controls
+    ├── TextArea.cpp         # Text editing widget
+    └── Footer.cpp           # Status information
 ```
 
-## Usage
+### Build Requirements
+- Qt 5.5 or later
+- CMake 3.16+
+- C++14 compliant compiler
 
-1. Launch `TextMAN.exe`
-2. Use the menu bar for file operations:
-   - **New**: Create a new document
-   - **Open**: Open an existing text file
-   - **Save**: Save the current document
-
-3. Format text using the toolbar options:
-   - Change font size and color
-   - Apply bold, italic, or underline styling
-   - Adjust text alignment
-
-4. The footer displays real-time word and character counts
-
-## Building from Source
-
-If you want to build TextMAN yourself, you'll need:
-
-- MSYS2 with MinGW-w64
-- Qt 5.5 development libraries
-- CMake 3.13.5 or later
-
-Build instructions:
+### Building from Source
 ```bash
-mkdir build
-cd build
-cmake -G "Ninja" ..
-ninja
+mkdir build && cd build
+cmake ..
+cmake --build .
 ```
 
-## Deployment
+## Development
 
-After building, use `windeployqt` to package required Qt libraries:
-```bash
-windeployqt TextMAN.exe
-```
+### Key Classes
+- `AppController`: Main application controller
+- `DocumentManager`: Handles file operations
+- `MainWindow`: Core UI container
+- `TextArea`: Custom QTextEdit implementation
+- `Toolbar`: Text formatting controls
 
-## Known Issues
-
-- Limited to plain text editing
-- Maximum document size of 10,000 words
-- Shape tools are basic and limited
+### Adding New Features
+1. Define interface in relevant header under `include/`
+2. Implement in corresponding source under `src/`
+3. Connect to UI through signals/slots
+4. Update CMakeLists.txt if adding new files
 
 ## License
-
-TextMAN is released under the [MIT License](LICENSE).
-
-## Support
-
-For issues or feature requests, please contact the MiniOS development team.
-
----
-=======
-# MiniOs-PBL
->>>>>>> 932a1eecf986931ce3b5bfd1ed0f9d956e08d979
+This project is available under the MIT License.
