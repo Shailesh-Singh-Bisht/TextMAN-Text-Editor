@@ -83,6 +83,15 @@ src/
     cmake --build .
 ```
 
+  **Deploy:**
+   From the `build` directory, run:
+
+    ```powershell
+    windeployqt MusicWalker/MusicWalker.exe
+    ```
+   
+   This command collects all necessary Qt DLLs for distribution.
+
 -----
 
 ## Development
