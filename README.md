@@ -75,9 +75,13 @@ src/
 ### Building from Source
 
 ```bash
-mkdir build && cd build
-cmake ..
-cmake --build .
+    git clone https://github.com/Shailesh-Singh-Bisht/TextMAN-Text-Editor.git
+    cd TextMan
+    mkdir build
+    cd build
+    cmake .. -G "MinGW Makefiles" 
+    cmake --build .
+    ```
 ```
 
 -----
