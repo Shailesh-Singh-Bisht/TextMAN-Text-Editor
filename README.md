@@ -13,7 +13,7 @@ A **lightweight and efficient text editor** built with Qt 5, offering a clean an
 
   * Create, open, and save text documents.
   * **Automatic word and character counting** that updates in real-time.
-  * Clean, single-page document interface with a white background and a **10,000-word limit**.
+  * Clean, single-page document interface with a white background.
 
 ### Rich Text Formatting
 
