@@ -43,7 +43,7 @@ A **lightweight and efficient text editor** built with Qt 5, offering a clean an
 
 To get started with TextMAN, simply:
 
-1.  **Download the latest release RAR** from the [releases page]()
+1.  **Download the latest release RAR** from the [releases page](https://github.com/Shailesh-Singh-Bisht/TextMAN-Text-Editor/releases/tag/release)
 2.  **Extract the contents** of the downloaded RAR file to your preferred location on your system.
 3.  Navigate into the extracted folder and **run `TextMAN.exe`**. The application should launch directly.
 
